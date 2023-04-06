@@ -33,7 +33,7 @@ public class UserController {
     }
 
     // increment corrects
-    @PutMapping("/set-corr{id}")
+    @PutMapping("/set-corrects/{id}")
     public void updateUser(@PathVariable int id, @RequestBody User user) {
         User updatedUser = null;
         try {

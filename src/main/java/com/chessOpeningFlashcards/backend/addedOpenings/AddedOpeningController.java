@@ -40,12 +40,6 @@ public class AddedOpeningController {
     public List<AddedOpening> getUserOpenings(@PathVariable int id) {
         List<AddedOpening> userOpenings = null;
 
-        try {
-            userOpenings = addedOpeningsRepository.findbyUid(id);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
         return userOpenings;
     }
 
